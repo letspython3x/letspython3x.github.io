@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Let's Python 3.x - Pytest setup</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Let's Python 3.x </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/home-page.html">Home Page</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/category/test-2.html">Test 2</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/First Post.html">Minimum PyCharm configuration to run pytest</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-06-06T00:00:00+05:30">
+                Published: Wed 06 June 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2018-06-06T00:00:00+05:30">
+                Updated: Wed 06 June 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/abhishake-gupta.html">Abhishake Gupta</a>
+        </address>
+<p>In <a href="/category/python.html">Python</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/pycharm.html">PyCharm</a> <a href="/tag/pytest-setup.html">Pytest setup</a> </p>
+</footer><!-- /.post-info --><h2>Background</h2>
+<p><a href="https://www.jetbrains.com/help/pycharm/2017.3/meet-pycharm.html?top=&amp;utm_medium=help_link&amp;utm_source=from_product&amp;utm_campaign=PC&amp;utm_content=2017.3">PyCharm 2017.3.5</a> is a dedicated Python and Django IDE providing a wide range of essential tools for Python developers,
+ tightly integrated together to create a convenient environment for productive Python development and Web development.</p>
+<p><a href="http://pytest.org/">pytest</a> Starting to test your project with py.test is very easy. This is because there is very little boiler plate code required in your tests. It may be quick to start testing with py.test but it is far from a basic library. It has a full set of tools and testing capabilities when you need them. The traceback reporting is fantastic, it has really effective test collection and execution, test skipping and the ability to write parameterised tests.
+ For more information see the py.test web site <a href="(http://pytest.org/)">here</a></p>
+<h2>What this post is about !!</h2>
+<p>This post will focus on the settings to be made in pycharm so a developer could run its test cases in just one click 
+and generate a report of how many lines of the actual code is being covered by the test cases.</p>
+<h3>Steps to follow:</h3>
+<ol>
+<li>
+<p><strong>Make <code>tests</code> folder in the current project directory:</strong>
+Let's say my project name is <code>ab_calculator</code>, then create a <code>tests</code> directory in which 
+the test cases would be written for the calculator app.</p>
+</li>
+<li>
+<p><strong>Set the Project Interpreter:</strong>
+Go to <code>File -&gt; Settings -&gt; Project:[] -&gt; Project Interpreter</code>
+you may use any of the available python interpreters or can add an existing virtual/conda environment interpreter.
+(Make sure the interprter is locally available on your system)
+Click on <code>Apply</code></p>
+</li>
+<li>
+<p><strong>Set the Project Structure:</strong>
+Go to <code>File -&gt; Settings -&gt; Project:[] -&gt; Project Structure</code>
+Click on the Add Content Root and add the directories that contain your code and tests both.
+(They could be network mount drives as well.)<br>
+Click on <code>Apply</code></p>
+</li>
+<li>
+<p><strong>Set Default Test Runner:</strong>
+Go to <code>File -&gt; Settings -&gt; Tools -&gt; Python Integrated tools</code>
+set Default Test Runner as pytest.
+Click on <code>Apply</code></p>
+</li>
+<li>
+<p><strong>Set configurations for the current script:</strong></p>
+</li>
+</ol>
+<p>Go to <code>Run -&gt; Edit configurations -&gt; Defaults</code></p>
+<ul>
+<li>
+<p><strong>Set interpreter</strong> (optional)
+    Under <code>Defaults</code> click on <code>Python</code>
+    and choose the interpreter from available interpreters specific for this script.
+    and in working directory provide the path for the current project.
+    Set <code>environment variables</code> if any specific to the project.</p>
+</li>
+<li>
+<p><strong>Set tests</strong>
+    Under <code>Defaults</code> click on <code>Python Tests</code>
+    click <code>python</code> and choose the interpreter from available interpreters specific for this script.
+    and in working directory provide the path for the <code>tests</code> directory of the current project.
+    Set <code>environment variables</code> if any specific to the project.</p>
+</li>
+<li>
+<p><strong>Add pytest in tests</strong>
+    In the top menu click the <code>+</code> symbol, then <code>python tests</code>
+    on this page Add the <code>Name: pytest in tests</code> and check the python interpreter and working directory, it should be same as the directories set above.   </p>
+</li>
+</ul>
+<h2>References below:</h2>
+<ol>
+<li><a href="https://stackoverflow.com/questions/6397063/how-do-i-configure-pycharm-to-run-py-test-tests">Stack Overflow: How to configure pycharm for pytest</a></li>
+<li><a href="http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html">Why to use pytest</a></li>
+</ol>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="https://www.fullstackpython.com/">Full Stack Python</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
