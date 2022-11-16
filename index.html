@@ -1,222 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-        <meta charset="utf-8" />
-        <title>Let's Python 3.x</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <title>Abhishake Gupta</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
+<body class="is-preload">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Let's Python 3.x </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
-                    <li><a href="/pages/home-page.html">Home Page</a></li>
-                    <li><a href="/category/python.html">Python</a></li>
-                    <li><a href="/category/test-2.html">Test 2</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<!-- Header -->
+<div id="header">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/First Post.html">Minimum PyCharm configuration to run pytest</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2018-06-06T00:00:00+05:30">
-                Published: Wed 06 June 2018
-        </abbr>
-		<br />
-        <abbr class="modified" title="2018-06-06T00:00:00+05:30">
-                Updated: Wed 06 June 2018
-        </abbr>
+    <div class="top">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/abhishake-gupta.html">Abhishake Gupta</a>
-        </address>
-<p>In <a href="/category/python.html">Python</a>.</p>
-<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/pycharm.html">PyCharm</a> <a href="/tag/pytest-setup.html">Pytest setup</a> </p>
-</footer><!-- /.post-info --><h2>Background</h2>
-<p><a href="https://www.jetbrains.com/help/pycharm/2017.3/meet-pycharm.html?top=&amp;utm_medium=help_link&amp;utm_source=from_product&amp;utm_campaign=PC&amp;utm_content=2017.3">PyCharm 2017.3.5</a> is a dedicated Python and Django IDE providing a wide range of essential tools for Python developers,
- tightly integrated together to create a convenient environment for productive Python development and Web development.</p>
-<p><a href="http://pytest.org/">pytest</a> Starting to test your project with py.test is very easy. This is because there is very little boiler plate code required in your tests. It may be quick to start testing with py.test but it is far from a basic library. It has a full set of tools and testing capabilities when you need them. The traceback reporting is fantastic, it has really effective test collection and execution, test skipping and the ability to write parameterised tests.
- For more information see the py.test web site <a href="(http://pytest.org/)">here</a></p>
-<h2>What this post is about !!</h2>
-<p>This post will focus on the settings to be made in pycharm so a developer could run its test cases in just one click 
-and generate a report of how many lines of the actual code is being covered by the test cases.</p>
-<h3>Steps to follow:</h3>
-<ol>
-<li>
-<p><strong>Make <code>tests</code> folder in the current project directory:</strong>
-Let's say my project name is <code>ab_calculator</code>, then create a <code>tests</code> directory in which 
-the test cases would be written for the calculator app.</p>
-</li>
-<li>
-<p><strong>Set the Project Interpreter:</strong>
-Go to <code>File -&gt; Settings -&gt; Project:[] -&gt; Project Interpreter</code>
-you may use any of the available python interpreters or can add an existing virtual/conda environment interpreter.
-(Make sure the interprter is locally available on your system)
-Click on <code>Apply</code></p>
-</li>
-<li>
-<p><strong>Set the Project Structure:</strong>
-Go to <code>File -&gt; Settings -&gt; Project:[] -&gt; Project Structure</code>
-Click on the Add Content Root and add the directories that contain your code and tests both.
-(They could be network mount drives as well.)<br>
-Click on <code>Apply</code></p>
-</li>
-<li>
-<p><strong>Set Default Test Runner:</strong>
-Go to <code>File -&gt; Settings -&gt; Tools -&gt; Python Integrated tools</code>
-set Default Test Runner as pytest.
-Click on <code>Apply</code></p>
-</li>
-<li>
-<p><strong>Set configurations for the current script:</strong></p>
-</li>
-</ol>
-<p>Go to <code>Run -&gt; Edit configurations -&gt; Defaults</code></p>
-<ul>
-<li>
-<p><strong>Set interpreter</strong> (optional)
-    Under <code>Defaults</code> click on <code>Python</code>
-    and choose the interpreter from available interpreters specific for this script.
-    and in working directory provide the path for the current project.
-    Set <code>environment variables</code> if any specific to the project.</p>
-</li>
-<li>
-<p><strong>Set tests</strong>
-    Under <code>Defaults</code> click on <code>Python Tests</code>
-    click <code>python</code> and choose the interpreter from available interpreters specific for this script.
-    and in working directory provide the path for the <code>tests</code> directory of the current project.
-    Set <code>environment variables</code> if any specific to the project.</p>
-</li>
-<li>
-<p><strong>Add pytest in tests</strong>
-    In the top menu click the <code>+</code> symbol, then <code>python tests</code>
-    on this page Add the <code>Name: pytest in tests</code> and check the python interpreter and working directory, it should be same as the directories set above.   </p>
-</li>
-</ul>
-<h2>References below:</h2>
-<ol>
-<li><a href="https://stackoverflow.com/questions/6397063/how-do-i-configure-pycharm-to-run-py-test-tests">Stack Overflow: How to configure pycharm for pytest</a></li>
-<li><a href="http://halfcooked.com/presentations/pyconau2013/why_I_use_pytest.html">Why to use pytest</a></li>
-</ol>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="images/avatar.jpg" alt=""/></span>
+            <h1 id="title">Abhishake Gupta</h1>
+            <p>Freelance Coder | 8+ years</p>
+        </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/Second Post.html" rel="bookmark"
-                           title="Permalink to My Post 2">My Post 2</a></h1>
-                </header>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+                <li><a href="#posts" id="posts-link"><span class="icon solid fa-th">Posts</span></a></li>
+                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+                <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+            </ul>
+        </nav>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-06-06T00:00:00+05:30">
-                Published: Wed 06 June 2018
-        </abbr>
-		<br />
-        <abbr class="modified" title="2018-06-06T00:00:00+05:30">
-                Updated: Wed 06 June 2018
-        </abbr>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/abhishake-gupta.html">Abhishake Gupta</a>
-        </address>
-<p>In <a href="/category/python.html">Python</a>.</p>
-<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/pycharm.html">PyCharm</a> <a href="/tag/python-setup.html">Python setup</a> </p>
-</footer><!-- /.post-info -->                <p>This is my first post on how a python developer can setup PyCharm so as to run its test cases automatically.</p>
-<p>Our youtube channel <a href="https://www.youtube.com/channel/UCWHI-Ebf7_2ogLINkBIqaYA/videos">here</a></p>
-<p>Below is the list of all videos
-<a href="#">Link 1</a>
-<a href="#">Link 2</a>
-<a href="#">Link 3</a></p>
-<p>Below is the list of linked files:</p>
-<p><a href="/pages/contact.html">Contact me here</a></p>
-<p><a href="{attach}/facebook.png}">facebook Image …</a></p>
-                <a class="readmore" href="/Second Post.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+    <div class="bottom">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/my-post-number-2.html" rel="bookmark"
-                           title="Permalink to My Post Number 2">My Post Number 2</a></h1>
-                </header>
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/letspython3x" class="icon brands fa-github"><span
+                    class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/abhishake-gupta/" class="icon brands fa-linkedin"><span
+                    class="label">LinkedIn</span></a></li>
+            <li><a href="https://medium.com/@letspython3.x/about" class="icon brands fa-medium"><span class="label">Dribbble</span></a>
+            </li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-06-01T00:00:00+05:30">
-                Published: Fri 01 June 2018
-        </abbr>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/ab-abhi.html">Ab Abhi</a>
-        </address>
-<p>In <a href="/category/test-2.html">Test 2</a>.</p>
+</div>
 
-</footer><!-- /.post-info -->                
-                <a class="readmore" href="/my-post-number-2.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<!-- Main -->
+<div id="main">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/another-post.html" rel="bookmark"
-                           title="Permalink to Another Post">Another Post</a></h1>
-                </header>
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-06-06T00:00:00+05:30">
-                Published: Tue 06 June 2017
-        </abbr>
+            <header>
+                <h2 class="alt"><strong>Abhishake Gupta</strong></h2>
+                <p>Software Engineer with 8+ Years experience of Backend Development.</p>
+                <p>Python | Nodejs | Golang | Docker</p>
+                <p>abhishakegupta91@gmail.com</p>
+            </header>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/ab-abhi.html">Ab Abhi</a>
-        </address>
-<p>In <a href="/category/test-2.html">Test 2</a>.</p>
+            <footer>
+                <a href="#portfolio" class="button scrolly">Portfolio</a>
+            </footer>
 
-</footer><!-- /.post-info -->                
-                <a class="readmore" href="/another-post.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="https://www.fullstackpython.com/">Full Stack Python</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+        </div>
+    </section>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+    <!-- Portfolio -->
+    <section id="portfolio" class="two">
+        <div class="container">
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+            <ul>
+                <li>
+                    Expertise in working complete (Backend) Software Development Life Cycle (SDLC) such as Analysis,
+                    Design, Development, Testing implementation & support with exposure to various flavors of DBs viz
+                    NON-RDBMS & RDBMS on Unix platform.
+                </li>
+                <li>Proficient in HLD, LLD, ER Diagrams, Conceptual, Logical & Physical Data Modeling.</li>
+                <li>Experienced in Design patterns viz. Algorithms, flowcharts & OOPS concepts.</li>
+                <li>Follows TDD & BDD approach for robust, scalable & clean applications.</li>
+            </ul>
+            <div class="row">
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="https://medium.com/@letspython3.x/python-file-format-conversion-rpt-to-csv-files-e0ca7d1cd7b2" class="image fit"><img src="images/pic02.jpg" alt=""/></a>
+                        <header>
+                            <h3>RPT To CSV File Converter</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="https://medium.com/@letspython3.x/pycharm-configuration-to-run-pytest-5ea9929a6c4" class="image fit"><img src="images/pic03.jpg" alt=""/></a>
+                        <header>
+                            <h3>Python Configuration to run Pytest</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""/></a>
+                        <header>
+                            <h3>Magna Nullam</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""/></a>
+                        <header>
+                            <h3>Natoque Vitae</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""/></a>
+                        <header>
+                            <h3>Dolor Penatibus</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""/></a>
+                        <header>
+                            <h3>Orci Convallis</h3>
+                        </header>
+                    </article>
+                </div>
+            </div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+        </div>
+    </section>
+
+    <!-- Posts -->
+    <section id="posts" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Posts</h2>
+            </header>
+
+            <p>Here are some of my posts.</p>
+
+            <div class="row">
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="https://medium.com/@letspython3.x/python-file-format-conversion-rpt-to-csv-files-e0ca7d1cd7b2" class="image fit"><img src="images/pic02.jpg" alt=""/></a>
+                        <header>
+                            <h3>RPT To CSV File Converter</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="https://medium.com/@letspython3.x/pycharm-configuration-to-run-pytest-5ea9929a6c4" class="image fit"><img src="images/pic03.jpg" alt=""/></a>
+                        <header>
+                            <h3>Python Configuration to run Pytest</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""/></a>
+                        <header>
+                            <h3>Magna Nullam</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""/></a>
+                        <header>
+                            <h3>Natoque Vitae</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="col-4 col-12-mobile">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""/></a>
+                        <header>
+                            <h3>Dolor Penatibus</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""/></a>
+                        <header>
+                            <h3>Orci Convallis</h3>
+                        </header>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="three">
+        <div class="container">
+
+            <header>
+                <h2>About Me</h2>
+            </header>
+
+            <a href="#" class="image featured"><img src="images/pic08.jpg" alt=""/></a>
+
+            <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+                ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+                laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+                parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+                dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+                ornare iaculis.</p>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
+
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <p>Contact</p>
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name"/></div>
+                    <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email"/></div>
+                    <div class="col-12">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Send Message"/>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; Untitled. All rights reserved.</li>
+        <li>Abhishake Gupta</li>
+    </ul>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
