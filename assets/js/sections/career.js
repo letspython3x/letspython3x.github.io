@@ -49,7 +49,7 @@ const CAREER_DATA = {
             "tags": ["Python", "SQL"]
         },
         {
-            "period": "2011 - 2014",
+            "period": "2009 - 2013",
             "title": "B.Tech Engineering",
             "company": "Bhagwan Parshuram Institute of Technology",
             "description": "Completed B.Tech in Electronics and Communication Engineering. Gained foundational experience in programming and software development methodologies.",
