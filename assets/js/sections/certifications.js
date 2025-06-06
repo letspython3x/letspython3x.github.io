@@ -8,37 +8,53 @@ const CERTIFICATIONS_DATA = {
     "intro": "I'm committed to continuous learning and professional development. Here are some of my certifications and completed training programs.",
     "certifications": [
         {
-            "title": "AWS Certified Solutions Architect",
-            "issuer": "Amazon Web Services",
-            "date": "2024",
-            "description": "Validated expertise in designing distributed systems on AWS, including deployment of applications, implementation of security controls, and designing for reliability and performance.",
-            "image": "images/cert-aws.png",
-            "verificationUrl": "https://www.credly.com/badges"
+            "title": "Advanced Options Concepts - Probability, Greeks, Simulation",
+            "issuer": "Udemy",
+            "date": "Jan 2024",
+            "description": "Validated expertise in advanced options concepts, including probability, Greeks, and simulation.",
+            "image": "images/option-greeks.webp",
+            "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6bd023a2-0d58-483f-a2dc-c54c3708494b.pdf"
         },
         {
-            "title": "Professional Scrum Master I (PSM I)",
-            "issuer": "Scrum.org",
-            "date": "2023",
-            "description": "Demonstrated understanding of Scrum framework and ability to apply Scrum in team environments to deliver high-value products.",
-            "image": "images/cert-scrum.png",
-            "verificationUrl": "https://www.scrum.org/certificates"
+            "title": "The Complete FastAPI Course With OAuth & JWT Authentication",
+            "issuer": "Udemy",
+            "date": "Jan 2023",
+            "description": "Demonstrated understanding of FastAPI framework",
+            "image": "images/cert-fastapi.png",
+            "verificationUrl": "https://www.udemy.com/certificate/UC-7422906a-4537-492e-a7e2-7a4e18630d92/"
         },
         {
-            "title": "MongoDB Certified Developer",
-            "issuer": "MongoDB University",
-            "date": "2022",
-            "description": "Validated proficiency in MongoDB application development, including data modeling, indexing strategies, aggregation framework, and performance optimization.",
-            "image": "images/cert-mongodb.png",
-            "verificationUrl": "https://university.mongodb.com/certification"
+            "title": "Stock market factor investing quantitative trading",
+            "issuer": "Udemy",
+            "date": "Dec 2022",
+            "description": "Demonstrated proficiency in stock market factor investing and quantitative trading.",
+            "image": "images/cert-stock-trading.jpg",
+            "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-2a5ac93e-a899-4452-a16b-9d611d1fe750.pdf"
         },
         {
-            "title": "Microsoft Certified: Azure Developer Associate",
-            "issuer": "Microsoft",
-            "date": "2021",
-            "description": "Demonstrated ability to design, build, test, and maintain cloud applications and services on Microsoft Azure.",
-            "image": "images/cert-azure.png",
-            "verificationUrl": "https://learn.microsoft.com/en-us/certifications"
-        }
+            "title": "Interactive Brokers Python Api Advanced Concepts",
+            "issuer": "Udemy",
+            "date": "Nov 2022",
+            "description": "Demonstrated proficiency in Interactive Brokers Python API advanced concepts.",
+            "image": "images/cert-ib.png",
+            "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-fac918c3-ebf1-4cc0-a309-dbf1046468a4.pdf"
+        },
+        {
+            "title": "Introduction to Kubernetes",
+            "issuer": "Linux Academy",
+            "date": "Aug 2021",
+            "description": "Demonstrated proficiency in Kubernetes introduction.",
+            "image": "images/cert-kubernetes.png",
+            "verificationUrl": ""
+        },
+        {
+            "title": "Docker",
+            "issuer": "LinkedIn",
+            "date": "Jan 2020",
+            "description": "Demonstrated proficiency in learning Docker.",
+            "image": "images/cert-docker.jpeg",
+            "verificationUrl": "https://www.linkedin.com/learning/certificates/02c6a173aac4ca0e640bba548bbcba19a9fb94b8a1e820a5741f4fd4d025dd16?trk=backfilled_certificate"
+        },
     ]
 };
 
