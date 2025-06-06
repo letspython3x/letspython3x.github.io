@@ -10,8 +10,7 @@ const PROJECTS_DATA = {
         {
             "title": "E-commerce Platform",
             "description": "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, payment integration, and order management.",
-            "image": "images/project1.jpg",
-            "imageAlt": "E-commerce Platform Screenshot",
+            "icon": "fa-shopping-cart",
             "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
             "liveUrl": "https://github.com/letspython3x/",
             "githubUrl": "https://github.com/letspython3x/",
@@ -20,8 +19,7 @@ const PROJECTS_DATA = {
         {
             "title": "Task Management System",
             "description": "A collaborative task management application with real-time updates using WebSockets. Includes features like task assignment, progress tracking, deadline notifications, and team collaboration tools.",
-            "image": "images/project2.jpg",
-            "imageAlt": "Task Management System Screenshot",
+            "icon": "fa-tasks",
             "technologies": ["Python", "Django", "PostgreSQL", "WebSockets", "React"],
             "liveUrl": "https://github.com/letspython3x/",
             "githubUrl": "https://github.com/letspython3x/",
@@ -30,8 +28,7 @@ const PROJECTS_DATA = {
         {
             "title": "AI Content Generator",
             "description": "An AI-powered content generation tool that creates blog posts, social media content, and marketing copy based on user prompts. Utilizes natural language processing and machine learning algorithms.",
-            "image": "images/project3.jpg",
-            "imageAlt": "AI Content Generator Screenshot",
+            "icon": "fa-robot",
             "technologies": ["Python", "TensorFlow", "Flask", "React", "OpenAI API"],
             "liveUrl": "https://github.com/letspython3x/",
             "githubUrl": "https://github.com/letspython3x/",
@@ -40,8 +37,7 @@ const PROJECTS_DATA = {
         {
             "title": "Financial Dashboard",
             "description": "An interactive financial dashboard that visualizes stock market data, portfolio performance, and investment analytics. Features include real-time data updates and customizable charts.",
-            "image": "images/project4.jpg",
-            "imageAlt": "Financial Dashboard Screenshot",
+            "icon": "fa-chart-line",
             "technologies": ["JavaScript", "D3.js", "React", "Node.js", "Financial APIs"],
             "liveUrl": "https://github.com/letspython3x/",
             "githubUrl": "https://github.com/letspython3x/",
