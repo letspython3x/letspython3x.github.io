@@ -1,0 +1,829 @@
+/* Custom styles for Abhishake Gupta's professional profile */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Profile Thumbnail */
+.profile-thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4acaa8;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Sidebar avatar image */
+#header .image.avatar48 img {
+    border-radius: 50%;
+    border: 2px solid #4acaa8;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    background-color: transparent;
+}
+
+#header .image.avatar48 img:hover {
+    transform: scale(1.1);
+    border-color: #5bd6b6;
+}
+
+/* Fix for logo background */
+#header #logo {
+    background-color: transparent;
+}
+
+#header #logo .image.avatar48 {
+    background-color: transparent;
+}
+
+/* General styling improvements */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Portfolio Section Styles */
+.portfolio-platforms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.platform-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.platform-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #4acaa8;
+}
+
+.platform-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.platform-card p {
+  color: #666;
+  font-size: 0.9em;
+  flex-grow: 1;
+}
+
+.platform-link {
+  margin-top: 15px;
+}
+
+.skill-item {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  border-left: 3px solid #4acaa8;
+}
+
+.skills-row {
+  margin-top: 2rem;
+}
+
+/* Blog Posts Section Styles */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.blog-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .card-image-container img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  color: #fff;
+  text-align: center;
+}
+
+.read-more {
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-tags {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-tags span {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.card-excerpt {
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 0.85em;
+  margin-top: auto;
+}
+
+.featured {
+  border-top: 4px solid #4acaa8;
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Projects Section Styles */
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tech-stack {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.featured-project {
+  border-left: 4px solid #4acaa8;
+}
+
+/* Certifications Section Styles */
+.certification-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certification-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.certification-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.certification-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.certification-title h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.certification-title .issuer {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.certification-content p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.verify-link {
+  display: inline-block;
+  color: #4acaa8;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.verify-link:hover {
+  color: #3a9d82;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+.section-intro {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 2em;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature list styling */
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  position: relative;
+}
+
+.feature-list li strong {
+  color: #4acaa8;
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #4acaa8;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 10px 40px 10px 50px;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #4acaa8;
+  margin-bottom: 10px;
+}
+
+.timeline-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+  margin: 0 0 5px 0;
+  color: #484848;
+}
+
+.timeline-content h4 {
+  margin: 0 0 15px 0;
+  color: #777;
+  font-style: italic;
+}
+
+.timeline-content p {
+  margin: 0 0 15px 0;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tags-container span {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+/* Tags styling */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tags span {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 5px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+/* Button styling */
+.button {
+  background-color: #4acaa8;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45b89d;
+}
+
+/* Section styling */
+section.two {
+  background-color: #f9f9f9;
+}
+
+section.three {
+  background-color: #ffffff;
+}
+
+section.four {
+  background-color: #f5f5f5;
+}
+
+section.five {
+  background-color: #ffffff;
+}
+
+/* Portfolio item styling */
+.item {
+  transition: transform 0.3s ease;
+  margin-bottom: 2em;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item header h3 {
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.item:hover header h3 {
+  color: #4acaa8;
+}
+
+/* Portfolio Platform Cards */
+.portfolio-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 0;
+    gap: 1.5em;
+}
+
+.platform-card {
+    flex: 1 0 30%;
+    min-width: 250px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.platform-link {
+    display: block;
+    padding: 1.5em;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.platform-link i {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #4acaa8;
+}
+
+.platform-link h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.platform-link p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .portfolio-platforms {
+        flex-direction: column;
+    }
+    
+    .platform-card {
+        width: 100%;
+    }
+}
+
+/* Blog grid and cards styling */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.blog-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.card-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .card-image-container img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(74, 202, 168, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: white;
+  color: #4acaa8;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-tags {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-tags span {
+  background-color: #f0f8f6;
+  color: #4acaa8;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.blog-card header h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3em;
+  line-height: 1.3;
+  color: #333;
+}
+
+.card-excerpt {
+  color: #666;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 0.85em;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.blog-card.featured {
+  grid-column: span 2;
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button.view-more {
+  background-color: transparent;
+  border: 2px solid #4acaa8;
+  color: #4acaa8;
+  font-weight: 600;
+}
+
+.button.view-more:hover {
+  background-color: #4acaa8;
+  color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .blog-card.featured {
+    grid-column: span 1;
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* Contact form styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #4acaa8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45b89d;
+}
+
+/* Footer styling */
+#footer {
+  padding: 2em 0;
+}
+
+#footer .copyright {
+  font-size: 0.9em;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 736px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .feature-list li {
+    padding-left: 0;
+  }
+}
