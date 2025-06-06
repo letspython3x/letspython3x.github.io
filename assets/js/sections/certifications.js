@@ -12,7 +12,7 @@ const CERTIFICATIONS_DATA = {
             "issuer": "Udemy",
             "date": "Jan 2024",
             "description": "Validated expertise in advanced options concepts, including probability, Greeks, and simulation.",
-            "image": "images/option-greeks.webp",
+            "image": "assets/css/images/option-greeks.webp",
             "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6bd023a2-0d58-483f-a2dc-c54c3708494b.pdf"
         },
         {
@@ -20,7 +20,7 @@ const CERTIFICATIONS_DATA = {
             "issuer": "Udemy",
             "date": "Jan 2023",
             "description": "Demonstrated understanding of FastAPI framework",
-            "image": "images/cert-fastapi.png",
+            "image": "assets/css/images/cert-fastapi.png",
             "verificationUrl": "https://www.udemy.com/certificate/UC-7422906a-4537-492e-a7e2-7a4e18630d92/"
         },
         {
@@ -28,7 +28,7 @@ const CERTIFICATIONS_DATA = {
             "issuer": "Udemy",
             "date": "Dec 2022",
             "description": "Demonstrated proficiency in stock market factor investing and quantitative trading.",
-            "image": "images/cert-stock-trading.jpg",
+            "image": "assets/css/images/cert-stock-trading.jpg",
             "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-2a5ac93e-a899-4452-a16b-9d611d1fe750.pdf"
         },
         {
@@ -36,7 +36,7 @@ const CERTIFICATIONS_DATA = {
             "issuer": "Udemy",
             "date": "Nov 2022",
             "description": "Demonstrated proficiency in Interactive Brokers Python API advanced concepts.",
-            "image": "images/cert-ib.png",
+            "image": "assets/css/images/cert-ib.png",
             "verificationUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-fac918c3-ebf1-4cc0-a309-dbf1046468a4.pdf"
         },
         {
@@ -52,7 +52,7 @@ const CERTIFICATIONS_DATA = {
             "issuer": "LinkedIn",
             "date": "Jan 2020",
             "description": "Demonstrated proficiency in learning Docker.",
-            "image": "images/cert-docker.jpeg",
+            "image": "assets/css/images/cert-docker.jpeg",
             "verificationUrl": "https://www.linkedin.com/learning/certificates/02c6a173aac4ca0e640bba548bbcba19a9fb94b8a1e820a5741f4fd4d025dd16?trk=backfilled_certificate"
         },
     ]
